@@ -101,6 +101,96 @@ body {
   background-color: #e14b27;
 }
 
+/* slider */
+.slider {
+  position: relative;
+  height: 100vh;
+  background: url('food-bg.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-text {
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 0 60px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.overlay-text h3 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+
+.overlay-text h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.slider-buttons {
+  margin-top: 30px;
+}
+
+.slider-buttons .btn {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 24px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.slider-buttons .btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.vertical-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  font-size: 14px;
+  color: white;
+  opacity: 0.8;
+  letter-spacing: 2px;
+}
+
+.vertical-text.left {
+  left: 0;
+}
+
+.vertical-text.right {
+  right: 0;
+  transform: translateY(-50%) rotate(90deg);
+}
+
+/* Dots */
+.slider-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+}
+
+.slider-dots .dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.slider-dots .dot.active {
+  background-color: white;
+}
+
 
 /*footer */
 .footer {
@@ -194,8 +284,10 @@ body {
 .newsletter {
   display: flex;
   margin-top: 15px;
+  align-items: center;
   background-color: #1a1a1a;
   border: 1px solid #1a1a1a;
+  padding-right: 10px;
 }
 
 .newsletter input {
@@ -209,8 +301,8 @@ body {
 .newsletter button {
   background-color: #e14b27;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border: none;
   align-items: center;
   cursor: pointer;
